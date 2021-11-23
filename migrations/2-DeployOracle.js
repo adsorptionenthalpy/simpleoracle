@@ -1,9 +1,9 @@
 
-const Contract = artifacts.require("tokenoracle");
-const Contract2 = artifacts.require("token");
-var Oracles = ['0xc24ae0a7a92055828c10521e2cae4f06b01026ce',
-'0xd7e87c88935fea016a6838f5420fc6b79bd67bf2',
-'0x4763ac7610b3cba72522625238701db72b8f5ed1'];
+const Contract = artifacts.require("Tokenoracle");
+const Contract2 = artifacts.require("Token");
+var Oracles = ['0x18C44d52023E955675d84AC602324b66feae81f2',
+'0x87258d0028a84987Cdf278Ee3A5888be4E486026',
+'0xe7edF1080BF2593E78c4D91b3E58CDc4Db502010'];
 module.exports = function (deployer) {
   deployer.deploy(Contract, Oracles, Contract2.address);
 };
