@@ -1,23 +1,27 @@
 {
-  "name": "fio.erc20",
+  "name": "Valts1155",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "npx truffle compile",
+    "polygon-console": "truffle console --config=truffle-config.polygon.js --network=matic_mumbai_testnet",
     "migrate-dev": "npx truffle migrate --network development",
     "migrate-rinkeby": "npx truffle migrate --network rinkeby",
+    "migrate-mumbai": "npx truffle migrate --network matic_mumbai_testnet",
     "migrate-mainnet": "npx truffle migrate --network mainnet",
     "test": "npx truffle test",
     "dev": "npx truffle console --network development",
-    "dev-rinkeby": "npx truffle console --network rinkeby",
+    "dev-mumbai": "npx truffle console --network matic_mumbai_testnet",
     "start-network": "npx ganache-cli"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.0",
+    "@openzeppelin/contracts-upgradeable": "^4.4.1",
     "@truffle/hdwallet-provider": "^1.0.37",
     "dotenv": "^10.0.0",
-    "solc": "^0.8.0",
-    "truffle": "^5.4.19",
+    "npm": "^8.3.0",
+    "solc": "0.8.4",
+    "truffle": "^5.1.65",
     "truffle-assertions": "^0.9.2"
   }
 }
